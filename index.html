@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatrice JS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+
+    <input type="text" id="op">
+    <form class="calcolatrice" name="calc">
+       
+        <input type="text" id="testo">
+        
+        <span class="numero btnac" onclick="pulisci()">AC</span>
+        <span class="numero btnpercent " onclick="operazione('%')">%</span>
+        <span class="numero btnoperazione" onclick="operazione('/')">/</span>
+        <span class="numero" onclick="calcolo(7)">7</span>
+        <span class="numero" onclick="calcolo(8)">8</span>
+        <span class="numero" onclick="calcolo(9)">9</span>
+        <span class="numero btnoperazione" onclick="operazione('*')">X</span>
+        <span class="numero" onclick="calcolo(4)">4</span>
+        <span class="numero" onclick="calcolo(5)">5</span>
+        <span class="numero" onclick="calcolo(6)">6</span>
+        <span class="numero btnoperazione" onclick="operazione('-')">-</span>
+        <span class="numero" onclick="calcolo(1)">1</span>
+        <span class="numero" onclick="calcolo(2)">2</span>
+        <span class="numero" onclick="calcolo(3)">3</span>
+        <span class="numero btnoperazione" onclick="operazione('+')">+</span>
+        <span class="numero" onclick="calcolo(0)">0</span>
+        <span class="numero" onclick="calcolo('.')">.</span>
+        <span class="numero btnuguale" onclick="risultato()">=</span>
+
+
+    </form>
+
+   
+
+    <script src="js/script.js"></script>
+</body>
+</html>
